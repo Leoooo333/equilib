@@ -224,8 +224,6 @@ def run(
 
     out = (
         out.astype(equi_dtype)
-        if equi_dtype == np.dtype(np.uint8)
-        else np.clip(out, 0.0, 1.0)
     )
 
     return out
